@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C# Color Reference</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .color-group { margin-bottom: 30px; }
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+    .color-item { border: 1px solid #ddd; padding: 10px; border-radius: 4px; }
+    .color-swatch { height: 100px; border-radius: 4px; margin-bottom: 10px; }
+    .color-info { font-size: 14px; }
+    .code-sample { background: #f5f5f5; padding: 5px; font-family: monospace; }
+  </style>
+</head>
+<body>
+<h2>Color Palette</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px;">
+<div style="flex: 1; min-width: 200px;">
+<h3>Reds</h3>
+<div style="background-color: #000000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Black<br/>
+  <small>#000000</small>
+</div>
+<div style="background-color: #800000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Maroon<br/>
+  <small>#800000</small>
+</div>
+<div style="background-color: #8B0000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkRed<br/>
+  <small>#8B0000</small>
+</div>
+<div style="background-color: #A52A2A; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Brown<br/>
+  <small>#A52A2A</small>
+</div>
+<div style="background-color: #696969; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DimGray<br/>
+  <small>#696969</small>
+</div>
+<div style="background-color: #B22222; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Firebrick<br/>
+  <small>#B22222</small>
+</div>
+<div style="background-color: #FF0000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Red<br/>
+  <small>#FF0000</small>
+</div>
+<div style="background-color: #808080; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Gray<br/>
+  <small>#808080</small>
+</div>
+<div style="background-color: #CD5C5C; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  IndianRed<br/>
+  <small>#CD5C5C</small>
+</div>
+<div style="background-color: #BC8F8F; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  RosyBrown<br/>
+  <small>#BC8F8F</small>
+</div>
+<div style="background-color: #A9A9A9; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkGray<br/>
+  <small>#A9A9A9</small>
+</div>
+<div style="background-color: #F08080; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightCoral<br/>
+  <small>#F08080</small>
+</div>
+<div style="background-color: #C0C0C0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Silver<br/>
+  <small>#C0C0C0</small>
+</div>
+<div style="background-color: #D3D3D3; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightGray<br/>
+  <small>#D3D3D3</small>
+</div>
+<div style="background-color: #DCDCDC; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Gainsboro<br/>
+  <small>#DCDCDC</small>
+</div>
+<div style="background-color: #F5F5F5; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  WhiteSmoke<br/>
+  <small>#F5F5F5</small>
+</div>
+<div style="background-color: #FFFAFA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Snow<br/>
+  <small>#FFFAFA</small>
+</div>
+<div style="background-color: #FFFFFF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Transparent<br/>
+  <small>#FFFFFF</small>
+</div>
+<div style="background-color: #FFFFFF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  White<br/>
+  <small>#FFFFFF</small>
+</div>
+<div style="background-color: #FFE4E1; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MistyRose<br/>
+  <small>#FFE4E1</small>
+</div>
+<div style="background-color: #FA8072; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Salmon<br/>
+  <small>#FA8072</small>
+</div>
+<div style="background-color: #FF6347; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Tomato<br/>
+  <small>#FF6347</small>
+</div>
+<div style="background-color: #E9967A; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkSalmon<br/>
+  <small>#E9967A</small>
+</div>
+<div style="background-color: #FF7F50; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Coral<br/>
+  <small>#FF7F50</small>
+</div>
+<div style="background-color: #FF4500; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  OrangeRed<br/>
+  <small>#FF4500</small>
+</div>
+<div style="background-color: #FFA07A; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightSalmon<br/>
+  <small>#FFA07A</small>
+</div>
+<div style="background-color: #A0522D; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Sienna<br/>
+  <small>#A0522D</small>
+</div>
+<div style="background-color: #FFF5EE; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  SeaShell<br/>
+  <small>#FFF5EE</small>
+</div>
+<div style="background-color: #8B4513; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  SaddleBrown<br/>
+  <small>#8B4513</small>
+</div>
+<div style="background-color: #D2691E; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Chocolate<br/>
+  <small>#D2691E</small>
+</div>
+<div style="background-color: #F4A460; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  SandyBrown<br/>
+  <small>#F4A460</small>
+</div>
+<div style="background-color: #FFDAB9; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PeachPuff<br/>
+  <small>#FFDAB9</small>
+</div>
+<div style="background-color: #CD853F; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Peru<br/>
+  <small>#CD853F</small>
+</div>
+<div style="background-color: #FF69B4; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  HotPink<br/>
+  <small>#FF69B4</small>
+</div>
+<div style="background-color: #FFF0F5; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LavenderBlush<br/>
+  <small>#FFF0F5</small>
+</div>
+<div style="background-color: #DB7093; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PaleVioletRed<br/>
+  <small>#DB7093</small>
+</div>
+<div style="background-color: #DC143C; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Crimson<br/>
+  <small>#DC143C</small>
+</div>
+<div style="background-color: #FFC0CB; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Pink<br/>
+  <small>#FFC0CB</small>
+</div>
+<div style="background-color: #FFB6C1; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightPink<br/>
+  <small>#FFB6C1</small>
+</div>
+</div>
+<div style="flex: 1; min-width: 200px;">
+<h3>Yellows</h3>
+<div style="background-color: #FAF0E6; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Linen<br/>
+  <small>#FAF0E6</small>
+</div>
+<div style="background-color: #FFE4C4; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Bisque<br/>
+  <small>#FFE4C4</small>
+</div>
+<div style="background-color: #FF8C00; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkOrange<br/>
+  <small>#FF8C00</small>
+</div>
+<div style="background-color: #DEB887; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  BurlyWood<br/>
+  <small>#DEB887</small>
+</div>
+<div style="background-color: #D2B48C; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Tan<br/>
+  <small>#D2B48C</small>
+</div>
+<div style="background-color: #FAEBD7; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  AntiqueWhite<br/>
+  <small>#FAEBD7</small>
+</div>
+<div style="background-color: #FFDEAD; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  NavajoWhite<br/>
+  <small>#FFDEAD</small>
+</div>
+<div style="background-color: #FFEBCD; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  BlanchedAlmond<br/>
+  <small>#FFEBCD</small>
+</div>
+<div style="background-color: #FFEFD5; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PapayaWhip<br/>
+  <small>#FFEFD5</small>
+</div>
+<div style="background-color: #FFE4B5; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Moccasin<br/>
+  <small>#FFE4B5</small>
+</div>
+<div style="background-color: #FFA500; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Orange<br/>
+  <small>#FFA500</small>
+</div>
+<div style="background-color: #F5DEB3; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Wheat<br/>
+  <small>#F5DEB3</small>
+</div>
+<div style="background-color: #FDF5E6; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  OldLace<br/>
+  <small>#FDF5E6</small>
+</div>
+<div style="background-color: #FFFAF0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  FloralWhite<br/>
+  <small>#FFFAF0</small>
+</div>
+<div style="background-color: #B8860B; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkGoldenrod<br/>
+  <small>#B8860B</small>
+</div>
+<div style="background-color: #DAA520; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Goldenrod<br/>
+  <small>#DAA520</small>
+</div>
+<div style="background-color: #FFF8DC; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Cornsilk<br/>
+  <small>#FFF8DC</small>
+</div>
+<div style="background-color: #FFD700; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Gold<br/>
+  <small>#FFD700</small>
+</div>
+<div style="background-color: #F0E68C; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Khaki<br/>
+  <small>#F0E68C</small>
+</div>
+<div style="background-color: #FFFACD; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LemonChiffon<br/>
+  <small>#FFFACD</small>
+</div>
+<div style="background-color: #EEE8AA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PaleGoldenrod<br/>
+  <small>#EEE8AA</small>
+</div>
+<div style="background-color: #BDB76B; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkKhaki<br/>
+  <small>#BDB76B</small>
+</div>
+<div style="background-color: #808000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Olive<br/>
+  <small>#808000</small>
+</div>
+<div style="background-color: #FFFF00; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Yellow<br/>
+  <small>#FFFF00</small>
+</div>
+<div style="background-color: #FAFAD2; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightGoldenrodYellow<br/>
+  <small>#FAFAD2</small>
+</div>
+<div style="background-color: #F5F5DC; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Beige<br/>
+  <small>#F5F5DC</small>
+</div>
+<div style="background-color: #FFFFE0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightYellow<br/>
+  <small>#FFFFE0</small>
+</div>
+<div style="background-color: #FFFFF0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Ivory<br/>
+  <small>#FFFFF0</small>
+</div>
+<div style="background-color: #6B8E23; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  OliveDrab<br/>
+  <small>#6B8E23</small>
+</div>
+<div style="background-color: #9ACD32; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  YellowGreen<br/>
+  <small>#9ACD32</small>
+</div>
+<div style="background-color: #556B2F; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkOliveGreen<br/>
+  <small>#556B2F</small>
+</div>
+<div style="background-color: #ADFF2F; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  GreenYellow<br/>
+  <small>#ADFF2F</small>
+</div>
+</div>
+<div style="flex: 1; min-width: 200px;">
+<h3>Greens</h3>
+<div style="background-color: #7FFF00; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Chartreuse<br/>
+  <small>#7FFF00</small>
+</div>
+<div style="background-color: #7CFC00; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  LawnGreen<br/>
+  <small>#7CFC00</small>
+</div>
+<div style="background-color: #006400; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkGreen<br/>
+  <small>#006400</small>
+</div>
+<div style="background-color: #008000; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Green<br/>
+  <small>#008000</small>
+</div>
+<div style="background-color: #228B22; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  ForestGreen<br/>
+  <small>#228B22</small>
+</div>
+<div style="background-color: #00FF00; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Lime<br/>
+  <small>#00FF00</small>
+</div>
+<div style="background-color: #32CD32; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  LimeGreen<br/>
+  <small>#32CD32</small>
+</div>
+<div style="background-color: #8FBC8F; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkSeaGreen<br/>
+  <small>#8FBC8F</small>
+</div>
+<div style="background-color: #90EE90; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightGreen<br/>
+  <small>#90EE90</small>
+</div>
+<div style="background-color: #98FB98; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PaleGreen<br/>
+  <small>#98FB98</small>
+</div>
+<div style="background-color: #F0FFF0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Honeydew<br/>
+  <small>#F0FFF0</small>
+</div>
+<div style="background-color: #2E8B57; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  SeaGreen<br/>
+  <small>#2E8B57</small>
+</div>
+<div style="background-color: #3CB371; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumSeaGreen<br/>
+  <small>#3CB371</small>
+</div>
+<div style="background-color: #00FF7F; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  SpringGreen<br/>
+  <small>#00FF7F</small>
+</div>
+</div>
+<div style="flex: 1; min-width: 200px;">
+<h3>Cyans</h3>
+<div style="background-color: #F5FFFA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MintCream<br/>
+  <small>#F5FFFA</small>
+</div>
+<div style="background-color: #00FA9A; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumSpringGreen<br/>
+  <small>#00FA9A</small>
+</div>
+<div style="background-color: #66CDAA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumAquamarine<br/>
+  <small>#66CDAA</small>
+</div>
+<div style="background-color: #7FFFD4; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Aquamarine<br/>
+  <small>#7FFFD4</small>
+</div>
+<div style="background-color: #40E0D0; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Turquoise<br/>
+  <small>#40E0D0</small>
+</div>
+<div style="background-color: #20B2AA; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightSeaGreen<br/>
+  <small>#20B2AA</small>
+</div>
+<div style="background-color: #48D1CC; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumTurquoise<br/>
+  <small>#48D1CC</small>
+</div>
+<div style="background-color: #2F4F4F; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkSlateGray<br/>
+  <small>#2F4F4F</small>
+</div>
+<div style="background-color: #008080; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Teal<br/>
+  <small>#008080</small>
+</div>
+<div style="background-color: #008B8B; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkCyan<br/>
+  <small>#008B8B</small>
+</div>
+<div style="background-color: #00FFFF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Aqua<br/>
+  <small>#00FFFF</small>
+</div>
+<div style="background-color: #00FFFF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Cyan<br/>
+  <small>#00FFFF</small>
+</div>
+<div style="background-color: #AFEEEE; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PaleTurquoise<br/>
+  <small>#AFEEEE</small>
+</div>
+<div style="background-color: #E0FFFF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightCyan<br/>
+  <small>#E0FFFF</small>
+</div>
+<div style="background-color: #F0FFFF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Azure<br/>
+  <small>#F0FFFF</small>
+</div>
+<div style="background-color: #00CED1; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkTurquoise<br/>
+  <small>#00CED1</small>
+</div>
+<div style="background-color: #5F9EA0; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  CadetBlue<br/>
+  <small>#5F9EA0</small>
+</div>
+<div style="background-color: #B0E0E6; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  PowderBlue<br/>
+  <small>#B0E0E6</small>
+</div>
+<div style="background-color: #ADD8E6; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightBlue<br/>
+  <small>#ADD8E6</small>
+</div>
+<div style="background-color: #00BFFF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DeepSkyBlue<br/>
+  <small>#00BFFF</small>
+</div>
+<div style="background-color: #87CEEB; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  SkyBlue<br/>
+  <small>#87CEEB</small>
+</div>
+<div style="background-color: #87CEFA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightSkyBlue<br/>
+  <small>#87CEFA</small>
+</div>
+<div style="background-color: #4682B4; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  SteelBlue<br/>
+  <small>#4682B4</small>
+</div>
+<div style="background-color: #F0F8FF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  AliceBlue<br/>
+  <small>#F0F8FF</small>
+</div>
+<div style="background-color: #1E90FF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DodgerBlue<br/>
+  <small>#1E90FF</small>
+</div>
+</div>
+<div style="flex: 1; min-width: 200px;">
+<h3>Blues</h3>
+<div style="background-color: #708090; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  SlateGray<br/>
+  <small>#708090</small>
+</div>
+<div style="background-color: #778899; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightSlateGray<br/>
+  <small>#778899</small>
+</div>
+<div style="background-color: #B0C4DE; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  LightSteelBlue<br/>
+  <small>#B0C4DE</small>
+</div>
+<div style="background-color: #6495ED; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  CornflowerBlue<br/>
+  <small>#6495ED</small>
+</div>
+<div style="background-color: #4169E1; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  RoyalBlue<br/>
+  <small>#4169E1</small>
+</div>
+<div style="background-color: #000080; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Navy<br/>
+  <small>#000080</small>
+</div>
+<div style="background-color: #191970; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  MidnightBlue<br/>
+  <small>#191970</small>
+</div>
+<div style="background-color: #00008B; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkBlue<br/>
+  <small>#00008B</small>
+</div>
+<div style="background-color: #0000CD; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumBlue<br/>
+  <small>#0000CD</small>
+</div>
+<div style="background-color: #0000FF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Blue<br/>
+  <small>#0000FF</small>
+</div>
+<div style="background-color: #E6E6FA; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Lavender<br/>
+  <small>#E6E6FA</small>
+</div>
+<div style="background-color: #F8F8FF; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  GhostWhite<br/>
+  <small>#F8F8FF</small>
+</div>
+<div style="background-color: #6A5ACD; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  SlateBlue<br/>
+  <small>#6A5ACD</small>
+</div>
+<div style="background-color: #483D8B; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkSlateBlue<br/>
+  <small>#483D8B</small>
+</div>
+<div style="background-color: #7B68EE; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumSlateBlue<br/>
+  <small>#7B68EE</small>
+</div>
+<div style="background-color: #9370DB; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumPurple<br/>
+  <small>#9370DB</small>
+</div>
+</div>
+<div style="flex: 1; min-width: 200px;">
+<h3>Purples</h3>
+<div style="background-color: #663399; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  RebeccaPurple<br/>
+  <small>#663399</small>
+</div>
+<div style="background-color: #8A2BE2; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  BlueViolet<br/>
+  <small>#8A2BE2</small>
+</div>
+<div style="background-color: #4B0082; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Indigo<br/>
+  <small>#4B0082</small>
+</div>
+<div style="background-color: #9932CC; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkOrchid<br/>
+  <small>#9932CC</small>
+</div>
+<div style="background-color: #9400D3; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkViolet<br/>
+  <small>#9400D3</small>
+</div>
+<div style="background-color: #BA55D3; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumOrchid<br/>
+  <small>#BA55D3</small>
+</div>
+<div style="background-color: #800080; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Purple<br/>
+  <small>#800080</small>
+</div>
+<div style="background-color: #8B008B; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  DarkMagenta<br/>
+  <small>#8B008B</small>
+</div>
+<div style="background-color: #FF00FF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Fuchsia<br/>
+  <small>#FF00FF</small>
+</div>
+<div style="background-color: #FF00FF; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  Magenta<br/>
+  <small>#FF00FF</small>
+</div>
+<div style="background-color: #EE82EE; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Violet<br/>
+  <small>#EE82EE</small>
+</div>
+<div style="background-color: #DDA0DD; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Plum<br/>
+  <small>#DDA0DD</small>
+</div>
+<div style="background-color: #D8BFD8; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Thistle<br/>
+  <small>#D8BFD8</small>
+</div>
+<div style="background-color: #DA70D6; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  Orchid<br/>
+  <small>#DA70D6</small>
+</div>
+<div style="background-color: #C71585; color: #FFFFFF; padding: 8px; margin: 4px; border-radius: 4px;">
+  MediumVioletRed<br/>
+  <small>#C71585</small>
+</div>
+<div style="background-color: #FF1493; color: #000000; padding: 8px; margin: 4px; border-radius: 4px;">
+  DeepPink<br/>
+  <small>#FF1493</small>
+</div>
+</div>
+</div>
+
+<h2>All Colors</h2>
+<div style="font-family: Arial, sans-serif;">
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #000000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #000000">Black</span>
+  <span style="color: #666; margin-left: 10px;">#000000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #696969; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #696969">DimGray</span>
+  <span style="color: #666; margin-left: 10px;">#696969</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #808080; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #808080">Gray</span>
+  <span style="color: #666; margin-left: 10px;">#808080</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #A9A9A9; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #A9A9A9">DarkGray</span>
+  <span style="color: #666; margin-left: 10px;">#A9A9A9</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #C0C0C0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #C0C0C0">Silver</span>
+  <span style="color: #666; margin-left: 10px;">#C0C0C0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #D3D3D3; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #D3D3D3">LightGray</span>
+  <span style="color: #666; margin-left: 10px;">#D3D3D3</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DCDCDC; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DCDCDC">Gainsboro</span>
+  <span style="color: #666; margin-left: 10px;">#DCDCDC</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F5F5F5; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F5F5F5">WhiteSmoke</span>
+  <span style="color: #666; margin-left: 10px;">#F5F5F5</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFFFF">Transparent</span>
+  <span style="color: #666; margin-left: 10px;">#FFFFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFFFF">White</span>
+  <span style="color: #666; margin-left: 10px;">#FFFFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #BC8F8F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #BC8F8F">RosyBrown</span>
+  <span style="color: #666; margin-left: 10px;">#BC8F8F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #CD5C5C; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #CD5C5C">IndianRed</span>
+  <span style="color: #666; margin-left: 10px;">#CD5C5C</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #A52A2A; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #A52A2A">Brown</span>
+  <span style="color: #666; margin-left: 10px;">#A52A2A</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #B22222; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #B22222">Firebrick</span>
+  <span style="color: #666; margin-left: 10px;">#B22222</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F08080; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F08080">LightCoral</span>
+  <span style="color: #666; margin-left: 10px;">#F08080</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #800000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #800000">Maroon</span>
+  <span style="color: #666; margin-left: 10px;">#800000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #8B0000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #8B0000">DarkRed</span>
+  <span style="color: #666; margin-left: 10px;">#8B0000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF0000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF0000">Red</span>
+  <span style="color: #666; margin-left: 10px;">#FF0000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFAFA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFAFA">Snow</span>
+  <span style="color: #666; margin-left: 10px;">#FFFAFA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFE4E1; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFE4E1">MistyRose</span>
+  <span style="color: #666; margin-left: 10px;">#FFE4E1</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FA8072; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FA8072">Salmon</span>
+  <span style="color: #666; margin-left: 10px;">#FA8072</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF6347; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF6347">Tomato</span>
+  <span style="color: #666; margin-left: 10px;">#FF6347</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #E9967A; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #E9967A">DarkSalmon</span>
+  <span style="color: #666; margin-left: 10px;">#E9967A</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF7F50; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF7F50">Coral</span>
+  <span style="color: #666; margin-left: 10px;">#FF7F50</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF4500; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF4500">OrangeRed</span>
+  <span style="color: #666; margin-left: 10px;">#FF4500</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFA07A; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFA07A">LightSalmon</span>
+  <span style="color: #666; margin-left: 10px;">#FFA07A</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #A0522D; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #A0522D">Sienna</span>
+  <span style="color: #666; margin-left: 10px;">#A0522D</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFF5EE; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFF5EE">SeaShell</span>
+  <span style="color: #666; margin-left: 10px;">#FFF5EE</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #D2691E; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #D2691E">Chocolate</span>
+  <span style="color: #666; margin-left: 10px;">#D2691E</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #8B4513; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #8B4513">SaddleBrown</span>
+  <span style="color: #666; margin-left: 10px;">#8B4513</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F4A460; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F4A460">SandyBrown</span>
+  <span style="color: #666; margin-left: 10px;">#F4A460</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFDAB9; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFDAB9">PeachPuff</span>
+  <span style="color: #666; margin-left: 10px;">#FFDAB9</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #CD853F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #CD853F">Peru</span>
+  <span style="color: #666; margin-left: 10px;">#CD853F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FAF0E6; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FAF0E6">Linen</span>
+  <span style="color: #666; margin-left: 10px;">#FAF0E6</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFE4C4; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFE4C4">Bisque</span>
+  <span style="color: #666; margin-left: 10px;">#FFE4C4</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF8C00; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF8C00">DarkOrange</span>
+  <span style="color: #666; margin-left: 10px;">#FF8C00</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DEB887; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DEB887">BurlyWood</span>
+  <span style="color: #666; margin-left: 10px;">#DEB887</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #D2B48C; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #D2B48C">Tan</span>
+  <span style="color: #666; margin-left: 10px;">#D2B48C</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FAEBD7; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FAEBD7">AntiqueWhite</span>
+  <span style="color: #666; margin-left: 10px;">#FAEBD7</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFDEAD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFDEAD">NavajoWhite</span>
+  <span style="color: #666; margin-left: 10px;">#FFDEAD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFEBCD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFEBCD">BlanchedAlmond</span>
+  <span style="color: #666; margin-left: 10px;">#FFEBCD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFEFD5; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFEFD5">PapayaWhip</span>
+  <span style="color: #666; margin-left: 10px;">#FFEFD5</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFE4B5; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFE4B5">Moccasin</span>
+  <span style="color: #666; margin-left: 10px;">#FFE4B5</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFA500; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFA500">Orange</span>
+  <span style="color: #666; margin-left: 10px;">#FFA500</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F5DEB3; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F5DEB3">Wheat</span>
+  <span style="color: #666; margin-left: 10px;">#F5DEB3</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FDF5E6; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FDF5E6">OldLace</span>
+  <span style="color: #666; margin-left: 10px;">#FDF5E6</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFAF0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFAF0">FloralWhite</span>
+  <span style="color: #666; margin-left: 10px;">#FFFAF0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #B8860B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #B8860B">DarkGoldenrod</span>
+  <span style="color: #666; margin-left: 10px;">#B8860B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DAA520; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DAA520">Goldenrod</span>
+  <span style="color: #666; margin-left: 10px;">#DAA520</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFF8DC; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFF8DC">Cornsilk</span>
+  <span style="color: #666; margin-left: 10px;">#FFF8DC</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFD700; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFD700">Gold</span>
+  <span style="color: #666; margin-left: 10px;">#FFD700</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F0E68C; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F0E68C">Khaki</span>
+  <span style="color: #666; margin-left: 10px;">#F0E68C</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFACD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFACD">LemonChiffon</span>
+  <span style="color: #666; margin-left: 10px;">#FFFACD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #EEE8AA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #EEE8AA">PaleGoldenrod</span>
+  <span style="color: #666; margin-left: 10px;">#EEE8AA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #BDB76B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #BDB76B">DarkKhaki</span>
+  <span style="color: #666; margin-left: 10px;">#BDB76B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F5F5DC; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F5F5DC">Beige</span>
+  <span style="color: #666; margin-left: 10px;">#F5F5DC</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FAFAD2; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FAFAD2">LightGoldenrodYellow</span>
+  <span style="color: #666; margin-left: 10px;">#FAFAD2</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #808000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #808000">Olive</span>
+  <span style="color: #666; margin-left: 10px;">#808000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFF00; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFF00">Yellow</span>
+  <span style="color: #666; margin-left: 10px;">#FFFF00</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFFE0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFFE0">LightYellow</span>
+  <span style="color: #666; margin-left: 10px;">#FFFFE0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFFFF0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFFFF0">Ivory</span>
+  <span style="color: #666; margin-left: 10px;">#FFFFF0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #6B8E23; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #6B8E23">OliveDrab</span>
+  <span style="color: #666; margin-left: 10px;">#6B8E23</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #9ACD32; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #9ACD32">YellowGreen</span>
+  <span style="color: #666; margin-left: 10px;">#9ACD32</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #556B2F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #556B2F">DarkOliveGreen</span>
+  <span style="color: #666; margin-left: 10px;">#556B2F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #ADFF2F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #ADFF2F">GreenYellow</span>
+  <span style="color: #666; margin-left: 10px;">#ADFF2F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #7FFF00; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #7FFF00">Chartreuse</span>
+  <span style="color: #666; margin-left: 10px;">#7FFF00</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #7CFC00; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #7CFC00">LawnGreen</span>
+  <span style="color: #666; margin-left: 10px;">#7CFC00</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #8FBC8F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #8FBC8F">DarkSeaGreen</span>
+  <span style="color: #666; margin-left: 10px;">#8FBC8F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #228B22; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #228B22">ForestGreen</span>
+  <span style="color: #666; margin-left: 10px;">#228B22</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #32CD32; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #32CD32">LimeGreen</span>
+  <span style="color: #666; margin-left: 10px;">#32CD32</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #90EE90; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #90EE90">LightGreen</span>
+  <span style="color: #666; margin-left: 10px;">#90EE90</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #98FB98; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #98FB98">PaleGreen</span>
+  <span style="color: #666; margin-left: 10px;">#98FB98</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #006400; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #006400">DarkGreen</span>
+  <span style="color: #666; margin-left: 10px;">#006400</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #008000; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #008000">Green</span>
+  <span style="color: #666; margin-left: 10px;">#008000</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00FF00; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00FF00">Lime</span>
+  <span style="color: #666; margin-left: 10px;">#00FF00</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F0FFF0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F0FFF0">Honeydew</span>
+  <span style="color: #666; margin-left: 10px;">#F0FFF0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #2E8B57; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #2E8B57">SeaGreen</span>
+  <span style="color: #666; margin-left: 10px;">#2E8B57</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #3CB371; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #3CB371">MediumSeaGreen</span>
+  <span style="color: #666; margin-left: 10px;">#3CB371</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00FF7F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00FF7F">SpringGreen</span>
+  <span style="color: #666; margin-left: 10px;">#00FF7F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F5FFFA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F5FFFA">MintCream</span>
+  <span style="color: #666; margin-left: 10px;">#F5FFFA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00FA9A; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00FA9A">MediumSpringGreen</span>
+  <span style="color: #666; margin-left: 10px;">#00FA9A</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #66CDAA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #66CDAA">MediumAquamarine</span>
+  <span style="color: #666; margin-left: 10px;">#66CDAA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #7FFFD4; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #7FFFD4">Aquamarine</span>
+  <span style="color: #666; margin-left: 10px;">#7FFFD4</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #40E0D0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #40E0D0">Turquoise</span>
+  <span style="color: #666; margin-left: 10px;">#40E0D0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #20B2AA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #20B2AA">LightSeaGreen</span>
+  <span style="color: #666; margin-left: 10px;">#20B2AA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #48D1CC; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #48D1CC">MediumTurquoise</span>
+  <span style="color: #666; margin-left: 10px;">#48D1CC</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #2F4F4F; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #2F4F4F">DarkSlateGray</span>
+  <span style="color: #666; margin-left: 10px;">#2F4F4F</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #AFEEEE; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #AFEEEE">PaleTurquoise</span>
+  <span style="color: #666; margin-left: 10px;">#AFEEEE</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #008080; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #008080">Teal</span>
+  <span style="color: #666; margin-left: 10px;">#008080</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #008B8B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #008B8B">DarkCyan</span>
+  <span style="color: #666; margin-left: 10px;">#008B8B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00FFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00FFFF">Aqua</span>
+  <span style="color: #666; margin-left: 10px;">#00FFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00FFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00FFFF">Cyan</span>
+  <span style="color: #666; margin-left: 10px;">#00FFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #E0FFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #E0FFFF">LightCyan</span>
+  <span style="color: #666; margin-left: 10px;">#E0FFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F0FFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F0FFFF">Azure</span>
+  <span style="color: #666; margin-left: 10px;">#F0FFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00CED1; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00CED1">DarkTurquoise</span>
+  <span style="color: #666; margin-left: 10px;">#00CED1</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #5F9EA0; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #5F9EA0">CadetBlue</span>
+  <span style="color: #666; margin-left: 10px;">#5F9EA0</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #B0E0E6; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #B0E0E6">PowderBlue</span>
+  <span style="color: #666; margin-left: 10px;">#B0E0E6</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #ADD8E6; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #ADD8E6">LightBlue</span>
+  <span style="color: #666; margin-left: 10px;">#ADD8E6</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00BFFF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00BFFF">DeepSkyBlue</span>
+  <span style="color: #666; margin-left: 10px;">#00BFFF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #87CEEB; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #87CEEB">SkyBlue</span>
+  <span style="color: #666; margin-left: 10px;">#87CEEB</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #87CEFA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #87CEFA">LightSkyBlue</span>
+  <span style="color: #666; margin-left: 10px;">#87CEFA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #4682B4; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #4682B4">SteelBlue</span>
+  <span style="color: #666; margin-left: 10px;">#4682B4</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F0F8FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F0F8FF">AliceBlue</span>
+  <span style="color: #666; margin-left: 10px;">#F0F8FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #1E90FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #1E90FF">DodgerBlue</span>
+  <span style="color: #666; margin-left: 10px;">#1E90FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #708090; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #708090">SlateGray</span>
+  <span style="color: #666; margin-left: 10px;">#708090</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #778899; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #778899">LightSlateGray</span>
+  <span style="color: #666; margin-left: 10px;">#778899</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #B0C4DE; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #B0C4DE">LightSteelBlue</span>
+  <span style="color: #666; margin-left: 10px;">#B0C4DE</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #6495ED; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #6495ED">CornflowerBlue</span>
+  <span style="color: #666; margin-left: 10px;">#6495ED</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #4169E1; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #4169E1">RoyalBlue</span>
+  <span style="color: #666; margin-left: 10px;">#4169E1</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #191970; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #191970">MidnightBlue</span>
+  <span style="color: #666; margin-left: 10px;">#191970</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #E6E6FA; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #E6E6FA">Lavender</span>
+  <span style="color: #666; margin-left: 10px;">#E6E6FA</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #000080; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #000080">Navy</span>
+  <span style="color: #666; margin-left: 10px;">#000080</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #00008B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #00008B">DarkBlue</span>
+  <span style="color: #666; margin-left: 10px;">#00008B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #0000CD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #0000CD">MediumBlue</span>
+  <span style="color: #666; margin-left: 10px;">#0000CD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #0000FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #0000FF">Blue</span>
+  <span style="color: #666; margin-left: 10px;">#0000FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #F8F8FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #F8F8FF">GhostWhite</span>
+  <span style="color: #666; margin-left: 10px;">#F8F8FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #6A5ACD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #6A5ACD">SlateBlue</span>
+  <span style="color: #666; margin-left: 10px;">#6A5ACD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #483D8B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #483D8B">DarkSlateBlue</span>
+  <span style="color: #666; margin-left: 10px;">#483D8B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #7B68EE; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #7B68EE">MediumSlateBlue</span>
+  <span style="color: #666; margin-left: 10px;">#7B68EE</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #9370DB; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #9370DB">MediumPurple</span>
+  <span style="color: #666; margin-left: 10px;">#9370DB</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #663399; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #663399">RebeccaPurple</span>
+  <span style="color: #666; margin-left: 10px;">#663399</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #8A2BE2; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #8A2BE2">BlueViolet</span>
+  <span style="color: #666; margin-left: 10px;">#8A2BE2</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #4B0082; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #4B0082">Indigo</span>
+  <span style="color: #666; margin-left: 10px;">#4B0082</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #9932CC; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #9932CC">DarkOrchid</span>
+  <span style="color: #666; margin-left: 10px;">#9932CC</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #9400D3; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #9400D3">DarkViolet</span>
+  <span style="color: #666; margin-left: 10px;">#9400D3</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #BA55D3; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #BA55D3">MediumOrchid</span>
+  <span style="color: #666; margin-left: 10px;">#BA55D3</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #D8BFD8; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #D8BFD8">Thistle</span>
+  <span style="color: #666; margin-left: 10px;">#D8BFD8</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DDA0DD; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DDA0DD">Plum</span>
+  <span style="color: #666; margin-left: 10px;">#DDA0DD</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #EE82EE; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #EE82EE">Violet</span>
+  <span style="color: #666; margin-left: 10px;">#EE82EE</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #800080; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #800080">Purple</span>
+  <span style="color: #666; margin-left: 10px;">#800080</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #8B008B; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #8B008B">DarkMagenta</span>
+  <span style="color: #666; margin-left: 10px;">#8B008B</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF00FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF00FF">Fuchsia</span>
+  <span style="color: #666; margin-left: 10px;">#FF00FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF00FF; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF00FF">Magenta</span>
+  <span style="color: #666; margin-left: 10px;">#FF00FF</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DA70D6; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DA70D6">Orchid</span>
+  <span style="color: #666; margin-left: 10px;">#DA70D6</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #C71585; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #C71585">MediumVioletRed</span>
+  <span style="color: #666; margin-left: 10px;">#C71585</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF1493; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF1493">DeepPink</span>
+  <span style="color: #666; margin-left: 10px;">#FF1493</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FF69B4; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FF69B4">HotPink</span>
+  <span style="color: #666; margin-left: 10px;">#FF69B4</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFF0F5; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFF0F5">LavenderBlush</span>
+  <span style="color: #666; margin-left: 10px;">#FFF0F5</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DB7093; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DB7093">PaleVioletRed</span>
+  <span style="color: #666; margin-left: 10px;">#DB7093</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #DC143C; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #DC143C">Crimson</span>
+  <span style="color: #666; margin-left: 10px;">#DC143C</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFC0CB; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFC0CB">Pink</span>
+  <span style="color: #666; margin-left: 10px;">#FFC0CB</span>
+</div>
+<div style="margin: 5px; padding: 5px; border: 1px solid #ccc;">
+  <div style="display: inline-block; width: 20px; height: 20px; background-color: #FFB6C1; vertical-align: middle; margin-right: 10px;"></div>
+  <span style="color: #FFB6C1">LightPink</span>
+  <span style="color: #666; margin-left: 10px;">#FFB6C1</span>
+</div>
+</div>
+
+</body>
+</html>
