@@ -1,4 +1,4 @@
-<Query Kind="Program">
+<Query Kind="Statements">
   <NuGetReference>HtmlAgilityPack</NuGetReference>
   <Namespace>HtmlAgilityPack</Namespace>
 </Query>
@@ -6,6 +6,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using HtmlAgilityPack;
+
+//not complete
+
+string h1 = @"<ul>
+                        <li id='a'>apple</li>
+                        <li id='b'>banana</li>
+                      </ul>";
+string h2 = @"<ul>
+                        <li id='b'>BANANA</li>
+                        <li id='c'>cherry</li>
+                      </ul>";
+
+var doc1 = new HtmlDocument(); doc1.LoadHtml(h1);
+var doc2 = new HtmlDocument(); doc2.LoadHtml(h2);
+
+// 只合併第一層 <ul>
+var mergedUl = HtmlMerge
+				.MergeNodes(doc1.DocumentNode.SelectSingleNode("//ul"),
+							doc2.DocumentNode.SelectSingleNode("//ul"))
+				.First();               // 只取第一個 yield 結果
+
+Console.WriteLine(mergedUl.OuterHtml);
 
 public static class HtmlMerge
 {
