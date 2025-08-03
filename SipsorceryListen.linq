@@ -27,6 +27,10 @@ sipTransport.SIPTransportResponseReceived += async (lep, rep, req) =>
 userAgent.OnIncomingCall += async (ua, req) =>
 {
 	VoIPMediaSession voipMediaSession = new VoIPMediaSession();
+	voipMediaSession.OnRtpPacketReceived += (rep, media, rtpPkt) =>
+	{
+		media.Dump();
+	};
 	var uas = ua.AcceptCall(req);
 	await ua.Answer(uas, voipMediaSession);
 };
@@ -35,6 +39,7 @@ userAgent.OnCallHungup += (sIPDialogue) =>
 	$"📞 Call hung up with {sIPDialogue.CallId}".Dump();
 	source.Cancel();
 };
+
 Console.WriteLine("等待來電中...");
 Task<string> callTask = Util.ReadLineAsync(cancelToken: source.Token);
 try
