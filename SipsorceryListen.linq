@@ -29,7 +29,7 @@ userAgent.OnIncomingCall += async (ua, req) =>
 	VoIPMediaSession voipMediaSession = new VoIPMediaSession();
 	voipMediaSession.OnRtpPacketReceived += (rep, media, rtpPkt) =>
 	{
-		media.Dump();
+		(rtpPkt.Header.Timestamp, rtpPkt.Header.MarkerBit, rtpPkt.Header.PayloadType).Dump();
 	};
 	var uas = ua.AcceptCall(req);
 	await ua.Answer(uas, voipMediaSession);
